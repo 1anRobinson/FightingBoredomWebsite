@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    overflow-x: clip;
+}
+
+#bruh {
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#map {
+    background-color: red;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    will-change: transform;
+    /* overflow: scroll; */
+}
+
+#test {
+    background-color: green;
+    /* transform-origin: 0 0; */
+}
