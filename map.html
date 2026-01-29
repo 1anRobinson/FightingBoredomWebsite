@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src='map.js'></script>
+        <link href='map.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id='map' style='width: 1000px; height: 300px;'></div>
+        <script>
+        var map = new maplibregl.Map({
+        container: 'map',
+        style: 'style.json', // stylesheet location
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 3// starting zoom
+        });
+        </script>
+    </body>
+</html>
