@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <script src='map.js'></script>
+        <link href='map.css' rel='stylesheet' />
+    </head>
+    <body>
+        <div id='map' style='width: 101%; height: 100%;'></div>
+        <script>
+            var map = new maplibregl.Map({
+            container: 'map',
+            style: {
+                "version": 8,
+                "sources": {
+                    "raster-tiles": {
+                        "type": "raster",
+                        "tiles": [
+                            "./testing/a0.jpg",
+                            "./testing/a1.jpg",
+                            "./testing/a2.jpg",
+                            "./testing/a3.jpg",
+                            "./testing/a4.jpg",
+                            "./testing/a5.jpg",
+                            "./testing/a6.jpg",
+
+                            "./testing/b0.jpg",
+                            "./testing/b1.jpg",
+                            "./testing/b2.jpg",
+                            "./testing/b3.jpg",
+                            "./testing/b4.jpg",
+                            "./testing/b5.jpg",
+                            "./testing/b6.jpg",
+                            "./testing/b7.jpg"
+
+                            // "a0.webp", 
+                        ],
+                        "tileSize": 200,
+                        "minzoom": 0,
+                        "maxzoom": 5,
+                        "bounds": [-190,70,-90,90]      
+                        // last 2 must be larger than first 2
+                        //          controls left bound
+                        //[]             controls bottom bound
+                       //                   controls top bound 
+                        //[]
+                    }
+                },
+                "layers": [
+                    {
+                        "id": "background",
+                        "type": "background",
+                        "paint": {
+                            "background-color": "#00C8FE"
+                        }
+                    },
+                    {
+                        "id": "simple-tiles",
+                        "type": "raster",
+                        "source": "raster-tiles"
+                    }
+                ],
+                "id": "blank",
+                "center": [-130,0],
+                // "zoom": 0
+            }
+            });
+        </script>
+    </body>
+</html>
