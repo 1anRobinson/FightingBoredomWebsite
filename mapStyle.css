@@ -1,0 +1,72 @@
+html, body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#map{
+    background-color: rgba(0, 0, 255, 0.291);
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height:100%;
+}
+#reset {
+    position: absolute;
+    z-index: 1;
+}
+.bubble{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.expander {
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+.expander:hover{
+    background-color: rgb(232, 232, 232);
+}
+.expander:active{
+    background-color: yellowgreen;
+}
+
+.subLayer{
+    background-color: yellow;
+    display: none;
+    position:absolute;
+    /* flex-direction: row; */
+    padding: 10px;
+}
+#Bones{
+    background-color: aqua;
+    translate: 0px 70px;
+    /* flex-direction: row; */
+}
+#Blood{
+    background-color: orange;
+    translate: 80px 40px
+}
+#Groups{
+    background-color: chartreuse;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: row;
+    translate: 0px 80px
+}

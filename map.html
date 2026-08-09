@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=en-us>
+    <head>
+        <link rel="stylesheet" href="mapStyle.css"/>
+    </head>
+
+    <body>
+            <div id="main">
+                <button id="reset">Reset</button>
+                <div id="map">
+                    <button class="expander" id="AK" onclick="reveal('AK','Bones')">Animal Kingdom</button>      
+                    <div class="subLayer" id="Bones">Bones
+                        <button class="expander" id="noBones" onclick="reveal('')">Invertebrates</button>                  
+                        <button class="expander" id="yesBones" onclick="reveal('yesBones','Blood')">Vertebrates</button> 
+                        <div class="subLayer" id="Blood">Blood
+                            <button class="expander" id="Cold" onclick="reveal('')">Cold Blooded</button>                  
+                            <button class="expander" id="Warm" onclick="reveal('Warm','Groups')">Warm Blooded</button> 
+                            <div class="subLayer" id="Groups">Groups
+                                <button class="expander" id="birds">Birds</button>
+                                <button class="expander" id="fish">Fish</button>
+                                <button class="expander" id="mammalia">Mammalia</button>
+                                <button class="expander" id="reptiles">Reptiles</button>
+                                <button class="expander" id="amphibians">Amphibians</button>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <img id="template" src="template.svg">
+            </div>
+            <script src="panzoom.min.js"></script>
+            <script src="nav.js"></script>
+    </body>
+</html>
