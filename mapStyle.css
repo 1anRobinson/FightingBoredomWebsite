@@ -1,0 +1,88 @@
+html, body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#map{
+    background-color: rgba(0, 0, 255, 0.291);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height:100%;
+}
+#reset {
+    position: absolute;
+    z-index: 1;
+}
+.bubble{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.expander {
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+.expander:hover{
+    background-color: rgb(232, 232, 232);
+    cursor:pointer;
+}
+.expander:active{
+    background-color: yellowgreen;
+}
+
+.subLayer{
+    background-color: yellow;
+    display: none;
+    position:absolute;
+    /* flex-direction: row; */
+    padding: 10px;
+}
+#kingdoms{
+    background-color: coral;
+    display: block;
+    flex-direction: row;
+}
+#Bones{
+    background-color: aqua;
+    translate: -157px 70px;
+    /* flex-direction: row; */
+}
+
+#Blood{
+    background-color: orange;
+    translate: 60px 60px
+}
+
+#coldGroup{
+    background-color: chartreuse;
+    /* position: absolute; */
+    /* display: flex; */
+    flex-direction: row;
+    translate: -100px 60px
+}
+#warmGroup{
+    background-color: blueviolet;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: row;
+    translate: 240px 60px
+}
