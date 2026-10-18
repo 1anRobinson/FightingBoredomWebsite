@@ -8,19 +8,29 @@
             <div id="main">
                 <button id="reset">Reset</button>
                 <div id="map">
-                    <button class="expander" id="AK" onclick="reveal('AK','Bones')">Animal Kingdom</button>      
-                    <div class="subLayer" id="Bones">Bones
+                    <div class="subLayer" id="kingdoms">
+                        <button class="expander" id="PL" onclick="reveal('','')">Plants (Plantae)</button>
+                        <button class="expander" id="AK" onclick="reveal('AK','Bones')">Animals (Animalia)</button>
+                        <button class="expander" id="FG" onclick="reveal('','')">Fungi</button>
+                        <button class="expander" id="PR" onclick="reveal('','')">Protists (Protista)</button>
+                        <button class="expander" id="AR" onclick="reveal('','')">Archaea</button>
+                        <button class="expander" id="BA" onclick="reveal('','')">Bacteria (Animalia)</button>  
+                    </div>   
+                    <div class="subLayer" id="Bones">
                         <button class="expander" id="noBones" onclick="reveal('')">Invertebrates</button>                  
-                        <button class="expander" id="yesBones" onclick="reveal('yesBones','Blood')">Vertebrates</button> 
-                        <div class="subLayer" id="Blood">Blood
-                            <button class="expander" id="Cold" onclick="reveal('')">Cold Blooded</button>                  
-                            <button class="expander" id="Warm" onclick="reveal('Warm','Groups')">Warm Blooded</button> 
-                            <div class="subLayer" id="Groups">Groups
-                                <button class="expander" id="birds">Birds</button>
+                        <button class="expander" id="yesBones" onclick="reveal('yesBones','Blood')">Vertebrates (Chordata)</button> 
+                        <div class="subLayer" id="Blood">
+                            <button class="expander" id="Cold" onclick="reveal('Cold','coldGroup')">Cold Blooded</button>                  
+                            <button class="expander" id="Warm" onclick="reveal('Warm','warmGroup')">Warm Blooded</button> 
+                            <div class="subLayer" id="coldGroup">
                                 <button class="expander" id="fish">Fish</button>
-                                <button class="expander" id="mammalia">Mammalia</button>
-                                <button class="expander" id="reptiles">Reptiles</button>
-                                <button class="expander" id="amphibians">Amphibians</button>
+                                <button class="expander" id="reptiles">Reptiles (Reptilia)</button>
+                                <button class="expander" id="amphibians">Amphibians (Amphibia)</button>
+                            </div>    
+
+                            <div class="subLayer" id="warmGroup">
+                                <button class="expander" id="birds">Birds (Aves)</button>
+                                <button class="expander" id="mammalia">Mammals (Mammalia)</button>
                             </div>
                         </div>
                     </div>            

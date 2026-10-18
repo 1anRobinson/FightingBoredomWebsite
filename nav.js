@@ -1,3 +1,4 @@
+const canvas = document.getElementById("myCanvas")
 const elem = document.getElementById("map")
 const reset = document.getElementById("reset")
 const panzoom = Panzoom(elem, {
@@ -13,7 +14,7 @@ reset.addEventListener('click', panzoom.reset)
 
 function reveal(a,b){
   var y = document.getElementById(a)
-  y.style.backgroundColor = 'red';
+  y.style.backgroundColor = 'grey';
   var x = document.getElementById(b)
    if (x.style.display == "none") {
     x.style.display = "block";

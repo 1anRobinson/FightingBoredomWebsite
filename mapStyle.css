@@ -8,6 +8,7 @@ html, body{
     background-color: red;
     width: 100vw;
     height: 100vh;
+    position: absolute;
     /* justify-content: center; */
     /* align-items: center; */
 }
@@ -15,7 +16,7 @@ html, body{
     background-color: rgba(0, 0, 255, 0.291);
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     /* justify-content: center; */
     align-items: center;
     width: 100%;
@@ -42,6 +43,7 @@ html, body{
 }
 .expander:hover{
     background-color: rgb(232, 232, 232);
+    cursor:pointer;
 }
 .expander:active{
     background-color: yellowgreen;
@@ -54,19 +56,33 @@ html, body{
     /* flex-direction: row; */
     padding: 10px;
 }
+#kingdoms{
+    background-color: coral;
+    display: block;
+    flex-direction: row;
+}
 #Bones{
     background-color: aqua;
-    translate: 0px 70px;
+    translate: -157px 70px;
     /* flex-direction: row; */
 }
+
 #Blood{
     background-color: orange;
-    translate: 80px 40px
+    translate: 60px 60px
 }
-#Groups{
+
+#coldGroup{
     background-color: chartreuse;
+    /* position: absolute; */
+    /* display: flex; */
+    flex-direction: row;
+    translate: -100px 60px
+}
+#warmGroup{
+    background-color: blueviolet;
     position: absolute;
     /* display: flex; */
     flex-direction: row;
-    translate: 0px 80px
+    translate: 240px 60px
 }
