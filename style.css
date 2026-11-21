@@ -1,0 +1,50 @@
+html, body{
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:pink;
+    width: 100vw;
+    height: 98vh;
+}
+.button {
+    background-color: yellow;
+    /* position: absolute; */
+}
+#yrs {
+    background-color: purple;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 0px;
+    position: absolute;
+}
+.container {
+    background-color: orange;
+    height: 70vh;
+    position:relative;
+    display: flex;
+    display: none;
+    align-items: end;
+}
+.timeline {
+    background-color: green;
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+#overall{
+    display: block;
+}
+#btns {
+    position: fixed;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    bottom: 0;
+    right: 0;
+}

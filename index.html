@@ -2,9 +2,34 @@
 <html lang=en-us>
     <head>
         <link rel="stylesheet" href="style.css"/>
+        <script src="panzoom.min.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
-        <div>bruhoij</div>
+        <div id="main">
+            <div id="yrs">year spacing</div>
+            <div class="container" id="overall">
+                <div class="timeline" id="alltm">
+                    overall timeline
+                </div>
+            </div>
+            <div class="container" id="sketch">
+                <div class="timeline" id="sktm">sketch timeline</div>
+            </div>
+            <div class="container" id="paint">
+                <div class="timeline" id="pnttm">painting timeline</div>
+            </div>
+            <div class="container" id="anim">
+                <div class="timeline" id="anmtm">animation timeline</div>
+            </div>
+            <div id="btns">
+                <button class="button" id="allBtn" onclick="toggleDiv('overall')">overall</button>
+                <button class="button" id="skBtn" onclick="toggleDiv('sketch')">sketch</button>
+                <button class="button" id="pntBtn" onclick="toggleDiv('paint')">paintings</button>
+                <button class="button" id="anmBtnn" onclick="toggleDiv('anim')">animation</button>
+            </div>
+        </div>
+        </div>
     </body>
 </html>
